@@ -1,0 +1,5 @@
+name: CV system
+type: module
+description: 'System for manage user CV'
+package: Custom
+core: 8.x

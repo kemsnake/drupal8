@@ -1,0 +1,16 @@
+cv_system.results:
+  title: 'CV list'
+  description: 'List of cv'
+  parent: system.admin_config_development
+  route_name: cv_system.results
+  weight: 100
+cv_system.cv_send_form:
+  title: 'CV form'
+  description: 'Form for send cv'
+  route_name: cv_system.cv_send_form
+  weight: 100
+cv_system.cv_thanks:
+  title: 'CV form'
+  description: 'Form for send cv'
+  route_name: cv_system.cv_thanks
+  weight: 100
