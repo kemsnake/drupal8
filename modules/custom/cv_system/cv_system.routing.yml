@@ -2,7 +2,7 @@ cv_system.results:
   path: '/cv-module/results'
   defaults:
     _controller: 'Drupal\cv_system\Controller\CvController::cv_results'
-    _title: 'Page'
+    _title: 'List of CV'
   requirements:
     _permission: 'access content'
 cv_system.cv_send_form:
