@@ -2,12 +2,20 @@
 CONTENTS OF THIS FILE
 ---------------------
 
+ * About project
  * About Drupal
  * Configuration and features
  * Installation profiles
  * Appearance
  * Developing for Drupal
  * More information
+
+ABOUT PROJECT
+------------
+
+This is test project for create custom module for manage CV in drupal8.
+Database dump stored in root of project. Import it to drupal8 db.
+Links for form and results rendered in standard navigation block in left sidebar.
 
 ABOUT DRUPAL
 ------------
