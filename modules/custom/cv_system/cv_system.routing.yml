@@ -4,18 +4,18 @@ cv_system.results:
     _controller: 'Drupal\cv_system\Controller\CvController::cv_results'
     _title: 'List of CV'
   requirements:
-    _permission: 'access content'
+    _role: authenticated
 cv_system.cv_send_form:
   path: '/cv-module/form'
   defaults:
     _form: '\Drupal\cv_system\Form\CvForm'
     _title: 'Send CV'
   requirements:
-    _permission: 'access content'
+    _role: anonymous+authenticated
 cv_system.cv_thanks:
   path: '/cv-module/thanks'
   defaults:
     _controller: '\Drupal\cv_system\Controller\CvController::cv_thank_you'
     _title: 'Thank you'
   requirements:
-    _permission: 'access content'
+    _role: anonymous+authenticated
