@@ -1,0 +1,57 @@
+<?php
+/**
+ * @file
+ * Install hoks for cv_system module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function cv_system_schema(){
+  $schema['cv_system'] = array(
+    'description' => 'The table for storing CV data.',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for CV.',
+        'type' => 'serial',
+        'not null' => TRUE,
+        'unsigned' => TRUE,
+      ),
+      'name' => array(
+        'description' => 'User name.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'surname' => array(
+        'description' => 'User surname.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'email' => array(
+        'description' => 'User email.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'cv_fid' => array(
+        'description' => 'Fid of cv.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'created' => array(
+        'type' => 'int',
+        'not null' => FALSE,
+        'size' => 'normal',
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}

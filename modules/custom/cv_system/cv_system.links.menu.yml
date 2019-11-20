@@ -9,8 +9,3 @@ cv_system.cv_send_form:
   description: 'Form for send cv'
   route_name: cv_system.cv_send_form
   weight: 100
-cv_system.cv_thanks:
-  title: 'CV form'
-  description: 'Form for send cv'
-  route_name: cv_system.cv_thanks
-  weight: 100
